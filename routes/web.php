@@ -26,6 +26,10 @@ Route::get('/product-list', function () {
     return view('product.index');
 });
 
+Route::get('/create-product', function () {
+    return view('product.create');
+});
+
 
 Auth::routes();
 

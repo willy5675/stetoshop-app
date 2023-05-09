@@ -47,7 +47,8 @@
                                     <div class="product__img">
                                         <img src="assets/images/products/1.jpg" alt="Product" loading="lazy">
                                         <div class="product__action">
-                                            <a href="#" class="btn btn__primary btn__rounded" style="display: inline-flex;">
+                                            <a href="#" class="btn btn__primary btn__rounded"
+                                                style="display: inline-flex;">
                                                 <i class="icon-cart"></i> <span>Add To Cart</span>
                                             </a>
                                         </div><!-- /.product-action -->
@@ -64,7 +65,8 @@
                                     <div class="product__img">
                                         <img src="assets/images/products/2.jpg" alt="Product" loading="lazy">
                                         <div class="product__action">
-                                            <a href="#" class="btn btn__primary btn__rounded" style="display: inline-flex;">
+                                            <a href="#" class="btn btn__primary btn__rounded"
+                                                style="display: inline-flex;">
                                                 <i class="icon-cart"></i> <span>Add To Cart</span>
                                             </a>
                                         </div><!-- /.product-action -->
@@ -81,7 +83,8 @@
                                     <div class="product__img">
                                         <img src="assets/images/products/3.jpg" alt="Product" loading="lazy">
                                         <div class="product__action">
-                                            <a href="#" class="btn btn__primary btn__rounded" style="display: inline-flex;">
+                                            <a href="#" class="btn btn__primary btn__rounded"
+                                                style="display: inline-flex;">
                                                 <i class="icon-cart"></i> <span>Add To Cart</span>
                                             </a>
                                         </div><!-- /.product-action -->
@@ -98,7 +101,8 @@
                                     <div class="product__img">
                                         <img src="assets/images/products/4.jpg" alt="Product" loading="lazy">
                                         <div class="product__action">
-                                            <a href="#" class="btn btn__primary btn__rounded" style="display: inline-flex;">
+                                            <a href="#" class="btn btn__primary btn__rounded"
+                                                style="display: inline-flex;">
                                                 <i class="icon-cart"></i> <span>Add To Cart</span>
                                             </a>
                                         </div><!-- /.product-action -->
@@ -115,7 +119,8 @@
                                     <div class="product__img">
                                         <img src="assets/images/products/5.jpg" alt="Product" loading="lazy">
                                         <div class="product__action">
-                                            <a href="#" class="btn btn__primary btn__rounded" style="display: inline-flex;">
+                                            <a href="#" class="btn btn__primary btn__rounded"
+                                                style="display: inline-flex;">
                                                 <i class="icon-cart"></i> <span>Add To Cart</span>
                                             </a>
                                         </div><!-- /.product-action -->
@@ -132,7 +137,8 @@
                                     <div class="product__img">
                                         <img src="assets/images/products/6.jpg" alt="Product" loading="lazy">
                                         <div class="product__action">
-                                            <a href="#" class="btn btn__primary btn__rounded" style="display: inline-flex;">
+                                            <a href="#" class="btn btn__primary btn__rounded"
+                                                style="display: inline-flex;">
                                                 <i class="icon-cart"></i> <span>Add To Cart</span>
                                             </a>
                                         </div><!-- /.product-action -->
@@ -149,7 +155,8 @@
                                     <div class="product__img">
                                         <img src="assets/images/products/7.jpg" alt="Product" loading="lazy">
                                         <div class="product__action">
-                                            <a href="#" class="btn btn__primary btn__rounded" style="display: inline-flex;">
+                                            <a href="#" class="btn btn__primary btn__rounded"
+                                                style="display: inline-flex;">
                                                 <i class="icon-cart"></i> <span>Add To Cart</span>
                                             </a>
                                         </div><!-- /.product-action -->
@@ -166,7 +173,8 @@
                                     <div class="product__img">
                                         <img src="assets/images/products/8.jpg" alt="Product" loading="lazy">
                                         <div class="product__action">
-                                            <a href="#" class="btn btn__primary btn__rounded" style="display: inline-flex;">
+                                            <a href="#" class="btn btn__primary btn__rounded"
+                                                style="display: inline-flex;">
                                                 <i class="icon-cart"></i> <span>Add To Cart</span>
                                             </a>
                                         </div><!-- /.product-action -->
@@ -183,7 +191,8 @@
                                     <div class="product__img">
                                         <img src="assets/images/products/9.jpg" alt="Product" loading="lazy">
                                         <div class="product__action">
-                                            <a href="#" class="btn btn__primary btn__rounded" style="display: inline-flex;">
+                                            <a href="#" class="btn btn__primary btn__rounded"
+                                                style="display: inline-flex;">
                                                 <i class="icon-cart"></i> <span>Add To Cart</span>
                                             </a>
                                         </div><!-- /.product-action -->
@@ -209,15 +218,18 @@
                     </div><!-- /.col-lg-9 -->
                     <div class="col-sm-12 col-md-4 col-lg-3">
                         <aside class="sidebar-layout2">
-                            {{-- <div class="widget widget-search">
-                                <h5 class="widget__title">Search</h5>
-                                <div class="widget__content">
-                                    <form class="widget__form-search">
-                                        <input type="text" class="form-control" placeholder="Search...">
-                                        <button class="btn" type="submit"><i class="icon-search"></i></button>
-                                    </form>
-                                </div><!-- /.widget-content -->
-                            </div><!-- /.widget-search --> --}}
+                            @if (Auth::check())
+                                @if (Auth::user()->userRole->role->name == 'superadmin')
+                                    <div class="widget widget-search">
+                                        <h5 class="widget__title">Add Product</h5>
+                                        <div class="widget__content">
+                                            <a class="btn btn-primary color-white" href="/create-product"><i
+                                                    class="icon-first-aid-kit" style="display:inline-flex;"></i> Add New
+                                                Product</a>
+                                        </div><!-- /.widget-content -->
+                                    </div><!-- /.widget-search -->
+                                @endif
+                            @endif
                             <div class="widget widget-poducts">
                                 <h5 class="widget__title">Best Sellers</h5>
                                 <div class="widget__content">
