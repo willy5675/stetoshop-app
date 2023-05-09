@@ -1479,63 +1479,63 @@ h6 {
 }
 
 .btn__primary {
-  color: #ffffff;
-  background-color: #21cdc0;
+  color: #ffffff!important;
+  background-color: #21cdc0!important;
 }
 
 .btn__primary .icon-outlined {
-  color: #213360;
-  border: 1px solid #21cdc0;
-  color: #21cdc0;
-  background-color: #ffffff;
+  color: #213360!important;
+  border: 1px solid #21cdc0!important;
+  color: #21cdc0!important;
+  background-color: #ffffff!important;
 }
 
 .btn__primary .icon-filled {
-  color: #ffffff;
-  background-color: #21cdc0;
+  color: #ffffff!important;
+  background-color: #21cdc0!important;
 }
 
 .btn__primary:active, .btn__primary:focus {
-  color: #ffffff;
-  border-color: #21cdc0;
-  background-color: #21cdc0;
+  color: #ffffff!important;
+  border-color: #21cdc0!important;
+  background-color: #21cdc0!important;
 }
 
 .btn__primary:hover {
-  color: #ffffff;
+  color: #ffffff!important;
 }
 
 .btn__primary:hover .icon-outlined {
-  color: #213360;
-  background-color: #ffffff;
+  color: #213360!important;
+  background-color: #ffffff!important;
 }
 
 .btn__primary:hover .icon-filled {
-  color: #ffffff;
-  background-color: #213360;
+  color: #ffffff!important;
+  background-color: #213360!important;
 }
 
 .btn__primary.btn__outlined {
-  background-color: transparent;
-  border: 2px solid #21cdc0;
-  color: #21cdc0;
+  background-color: transparent!important;
+  border: 2px solid #21cdc0!important;
+  color: #21cdc0!important;
 }
 
 .btn__primary.btn__outlined .icon-arrow-right,
 .btn__primary.btn__outlined .icon-arrow-left {
-  color: #ffffff;
-  background-color: #21cdc0;
+  color: #ffffff!important;
+  background-color: #21cdc0!important;
 }
 
 .btn__primary.btn__outlined:hover {
-  color: #ffffff;
-  background-color: #21cdc0;
+  color: #ffffff!important;
+  background-color: #21cdc0!important;
 }
 
 .btn__primary.btn__outlined:hover .icon-arrow-right,
 .btn__primary.btn__outlined:hover .icon-arrow-left {
-  color: #21cdc0;
-  background-color: #ffffff;
+  color: #21cdc0!important;
+  background-color: #ffffff!important;
 }
 
 .btn__primary-style2:before {
@@ -1543,18 +1543,18 @@ h6 {
 }
 
 .btn__primary-style2:hover {
-  color: #213360;
+  color: #213360!important;
 }
 
 .btn__primary-style2:hover .icon-arrow-right,
 .btn__primary-style2:hover .icon-arrow-left {
-  color: #ffffff;
-  background-color: #213360;
+  color: #ffffff!important;
+  background-color: #213360!important
 }
 
 .btn__secondary {
-  color: #ffffff;
-  background-color: #213360;
+  color: #ffffff!important;
+  background-color: #213360!important;
 }
 
 .btn__secondary:before {
@@ -1562,33 +1562,33 @@ h6 {
 }
 
 .btn__secondary .icon-filled {
-  color: #ffffff;
-  background-color: #213360;
+  color: #ffffff!important;
+  background-color: #213360!important;
 }
 
 .btn__secondary:hover {
-  color: #ffffff;
+  color: #ffffff!important;
 }
 
 .btn__secondary:hover .icon-filled {
-  background-color: #21cdc0;
+  background-color: #21cdc0!important;
 }
 
 .btn__secondary:active, .btn__secondary:focus {
-  color: #ffffff;
-  border-color: #222222;
-  background-color: #222222;
+  color: #ffffff!important;
+  border-color: #222222!important;
+  background-color: #222222!important;
 }
 
 .btn__secondary.btn__outlined {
-  color: #213360;
-  background-color: transparent;
-  border: 2px solid #213360;
+  color: #213360!important;
+  background-color: transparent!important;
+  border: 2px solid #213360!important;
 }
 
 .btn__secondary.btn__outlined:hover {
-  color: #ffffff;
-  background-color: #213360;
+  color: #ffffff!important;
+  background-color: #213360!important;
 }
 
 .btn__secondary-style2:before {
@@ -1596,37 +1596,37 @@ h6 {
 }
 
 .btn__secondary-style2:hover {
-  color: #213360;
+  color: #213360!important;
 }
 
 .btn__white {
-  background-color: #ffffff;
-  color: #213360;
+  background-color: #ffffff!important;
+  color: #213360!important;
 }
 
 .btn__white:active, .btn__white:focus {
-  color: #213360;
-  border-color: #ffffff;
-  background-color: #ffffff;
+  color: #213360!important;
+  border-color: #ffffff!important;
+  background-color: #ffffff!important;
 }
 
 .btn__white:hover {
-  color: #ffffff;
+  color: #ffffff!important;
 }
 
 .btn__white.btn__outlined {
-  color: #ffffff;
-  background-color: transparent;
-  border: 2px solid #ffffff;
+  color: #ffffff!important;
+  background-color: transparent!important;
+  border: 2px solid #ffffff!important;
 }
 
 .btn__white.btn__outlined:hover {
-  color: #21cdc0;
-  background-color: #ffffff;
+  color: #21cdc0!important;
+  background-color: #ffffff!important;
 }
 
 .btn__white-style2 {
-  color: #21cdc0;
+  color: #21cdc0!important;
 }
 
 .btn__white-style2:before {
@@ -1634,12 +1634,12 @@ h6 {
 }
 
 .btn__outlined {
-  background-color: transparent;
+  background-color: transparent!important;
 }
 
 .btn__link {
-  background-color: transparent;
-  border-color: transparent;
+  background-color: transparent!important;
+  border-color: transparent!important;
   min-width: 0;
   line-height: 1;
   height: auto;
@@ -1649,7 +1649,7 @@ h6 {
 }
 
 .btn__link:focus, .btn__link:active {
-  background-color: transparent;
+  background-color: transparent!important;
 }
 
 .btn__link.btn__icon {
@@ -1659,7 +1659,7 @@ h6 {
 }
 
 .btn__link.btn__primary {
-  color: #21cdc0;
+  color: #21cdc0!important;
 }
 
 .btn__link.btn__primary-style2:hover {
@@ -1668,40 +1668,40 @@ h6 {
 
 .btn__link.btn__primary.btn__underlined {
   padding-bottom: 3px;
-  border-bottom: 2px solid #21cdc0;
+  border-bottom: 2px solid #21cdc0!important;
 }
 
 .btn__link.btn__primary:hover {
-  color: #222222;
+  color: #222222!important;
 }
 
 .btn__link.btn__primary:hover.btn__underlined {
-  border-color: #213360;
+  border-color: #213360!important;
 }
 
 .btn__link.btn__secondary {
-  color: #213360;
+  color: #213360!important;
 }
 
 .btn__link.btn__secondary:hover {
-  color: #21cdc0;
+  color: #21cdc0!important;
 }
 
 .btn__link.btn__white {
-  color: #ffffff;
+  color: #ffffff!important;
 }
 
 .btn__link.btn__white.btn__underlined {
   padding-bottom: 3px;
-  border-bottom: 2px solid #ffffff;
+  border-bottom: 2px solid #ffffff!important;
 }
 
 .btn__link.btn__white:hover {
-  color: #213360;
+  color: #213360!important;
 }
 
 .btn__link.btn__white:hover.btn__underlined {
-  border-color: #213360;
+  border-color: #213360!important;
 }
 
 .btn__block {
@@ -1732,20 +1732,20 @@ h6 {
   width: 54px;
   min-width: 0 !important;
   font-weight: 400;
-  color: #ffffff;
+  color: #ffffff!important;
   border-radius: 3px;
 }
 
 .btn__facebook {
-  background-color: #4267b2;
+  background-color: #4267b2!important;
 }
 
 .btn__twitter {
-  background-color: #1da0f0;
+  background-color: #1da0f0!important;
 }
 
 .btn__google-plus {
-  background-color: #ea4335;
+  background-color: #ea4335!important;
 }
 
 .btn__lg {
@@ -1764,7 +1764,7 @@ h6 {
 }
 
 .btn__rounded {
-  border-radius: 50px;
+  border-radius: 50px!important;
 }
 
 /* Mobile Phones and tablets */
@@ -6409,7 +6409,7 @@ input[type=radio] {
 
 .contact-info .contact-box .btn__white.btn__outlined {
   height: 42px;
-  border: 1px solid rgba(255, 255, 255, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.25)!important;
 }
 
 .contact-panel {
@@ -7202,7 +7202,7 @@ textarea.form-control {
 }
 
 .widget-reports .btn__primary:hover i {
-  background-color: #21cdc0;
+  background-color: #21cdc0!important;
 }
 
 /* Widget Filter */

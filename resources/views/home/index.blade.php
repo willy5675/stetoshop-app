@@ -19,10 +19,10 @@
                         <div class="row align-items-center">
                             <div class="col-sm-12 col-md-12 col-lg-12 col-xl-7">
                                 <div class="slide__content">
-                                    <h2 class="slide__title">Providing Best Medical Tools</h2>
+                                    <h2 class="slide__title">Providing Best Medical Equipment and Supplies</h2>
                                     <p class="slide__desc">The health and well-being of our patients and their health care
                                         team will
-                                        always be our priority, so we want to help provide the best medical tools.</p>
+                                        always be our priority, so we want to help provide the best medical tools and supplies.</p>
                                     <ul class="features-list list-unstyled mb-0 d-flex flex-wrap">
                                         <!-- feature item #1 -->
                                         <li class="feature-item">
@@ -64,10 +64,10 @@
                         <div class="row align-items-center">
                             <div class="col-sm-12 col-md-12 col-lg-12 col-xl-7">
                                 <div class="slide__content">
-                                    <h2 class="slide__title">All Aspects Of Medical Tools</h2>
+                                    <h2 class="slide__title">All Aspects Of Medical World</h2>
                                     <p class="slide__desc">The health and well-being of our patients and their health care
                                         team will
-                                        always be our priority, so we follow the best practices for cleanliness.</p>
+                                        always be our priority, so we follow the best practices for product cleanliness and secured process.</p>
                                     <ul class="features-list list-unstyled mb-0 d-flex flex-wrap">
                                         <!-- feature item #1 -->
                                         <li class="feature-item">
@@ -105,6 +105,97 @@
                 </div><!-- /.slide-item -->
             </div><!-- /.carousel -->
         </section><!-- /.slider -->
+
+        <section class="shop-grid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-6 offset-lg-3">
+                        <div class="heading text-center mb-40">
+                            <h2 class="heading__subtitle">Low Priced Medical Supplies</h2>
+                            <h3 class="heading__title">The Largest Selections Of Medical Products</h3>
+                        </div><!-- /.heading -->
+                    </div><!-- /.col-lg-6 -->
+                </div><!-- /.row -->
+                <div class="row">
+                    <!-- Product item #1 -->
+                    <div class="col-sm-6 col-md-6 col-lg-3">
+                        <div class="product-item">
+                            <div class="product__img">
+                                <img src="assets/images/products/1.jpg" alt="Product" loading="lazy">
+                                <div class="product__action">
+                                    <a href="#" class="btn btn__primary btn__rounded" style="display: inline-flex;">
+                                        <i class="icon-cart"></i> <span>Add To Cart</span>
+                                    </a>
+                                </div><!-- /.product-action -->
+                            </div><!-- /.product-img -->
+                            <div class="product__info">
+                                <h4 class="product__title"><a href="#">Calming Herps</a></h4>
+                                <span class="product__price">$18.99</span>
+                            </div><!-- /.product-content -->
+                        </div><!-- /.product-item -->
+                    </div><!-- /.col-lg-3 -->
+                    <!-- Product item #2 -->
+                    <div class="col-sm-6 col-md-6 col-lg-3">
+                        <div class="product-item">
+                            <div class="product__img">
+                                <img src="assets/images/products/2.jpg" alt="Product" loading="lazy">
+                                <div class="product__action">
+                                    <a href="#" class="btn btn__primary btn__rounded" style="display: inline-flex;">
+                                        <i class="icon-cart"></i> <span>Add To Cart</span>
+                                    </a>
+                                </div><!-- /.product-action -->
+                            </div><!-- /.product-img -->
+                            <div class="product__info">
+                                <h4 class="product__title"><a href="#">Biotin Complex</a></h4>
+                                <span class="product__price">$12,99</span>
+                            </div><!-- /.product-content -->
+                        </div><!-- /.product-item -->
+                    </div><!-- /.col-lg-3 -->
+                    <!-- Product item #3 -->
+                    <div class="col-sm-6 col-md-6 col-lg-3">
+                        <div class="product-item">
+                            <div class="product__img">
+                                <img src="assets/images/products/3.jpg" alt="Product" loading="lazy">
+                                <div class="product__action">
+                                    <a href="#" class="btn btn__primary btn__rounded" style="display: inline-flex;">
+                                        <i class="icon-cart"></i> <span>Add To Cart</span>
+                                    </a>
+                                </div><!-- /.product-action -->
+                            </div><!-- /.product-img -->
+                            <div class="product__info">
+                                <h4 class="product__title"><a href="#">Facial Serum</a></h4>
+                                <span class="product__price">$19,99</span>
+                            </div><!-- /.product-content -->
+                        </div><!-- /.product-item -->
+                    </div><!-- /.col-lg-3 -->
+                    <!-- Product item #4 -->
+                    <div class="col-sm-6 col-md-6 col-lg-3">
+                        <div class="product-item">
+                            <div class="product__img">
+                                <img src="assets/images/products/4.jpg" alt="Product" loading="lazy">
+                                <div class="product__action">
+                                    <a href="#" class="btn btn__primary btn__rounded" style="display: inline-flex;">
+                                        <i class="icon-cart"></i> <span>Add To Cart</span>
+                                    </a>
+                                </div><!-- /.product-action -->
+                            </div><!-- /.product-img -->
+                            <div class="product__info">
+                                <h4 class="product__title"><a href="#">Calming Herps</a></h4>
+                                <span class="product__price">$33.00</span>
+                            </div><!-- /.product-content -->
+                        </div><!-- /.product-item -->
+                    </div><!-- /.col-lg-3 -->
+                </div><!-- /.row -->
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <a href="/product-list" class="btn btn__secondary btn__rounded" style="display: inline-flex;">
+                            <span>Explore All</span>
+                            <i class="icon-arrow-right"></i>
+                        </a>
+                    </div><!-- /.col-lg-12 -->
+                </div><!-- /.row -->
+            </div><!-- /.container -->
+        </section><!-- /.shop -->
 
         <section class="work-process work-process-carousel pt-130 pb-0 bg-overlay bg-overlay-secondary">
             <div class="bg-img"><img src="{{ asset('assets/images/banners/1.jpg') }}" alt="background"></div>
@@ -197,12 +288,12 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-12 col-md-12 col-lg-8">
-                          <div class="heading__layout2 mb-50">
-                            <h3 class="heading__title color-white">Contact Us Directly &amp; Start Provide Care for The
-                              Sickest In Our Community.</h3>
-                          </div>
+                            <div class="heading__layout2 mb-50">
+                                <h3 class="heading__title color-white">Contact Us Directly &amp; Start Provide Care for The
+                                    Sickest In Our Community.</h3>
+                            </div>
                         </div><!-- /col-lg-5 -->
-                      </div>
+                    </div>
                     <div class="row">
                         <div class="col-sm-12 col-md-12 col-lg-7">
                             <div class="contact-panel mb-50">
@@ -282,7 +373,8 @@
                             <div class="text__block">
                                 <p class="text__block-desc color-white font-weight-bold">We provide a comprehensive range
                                     of plans for
-                                    organizations and individuals at every stage process, with annual limits ranging from Rp1.5M
+                                    organizations and individuals at every stage process, with annual limits ranging from
+                                    Rp1.5M
                                     to unlimited.</p>
                                 <div class="sinature color-white">
                                     <span class="font-weight-bold">Jack Qube</span><span>, Stetoshop Manager</span>
