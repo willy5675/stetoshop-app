@@ -33,52 +33,44 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="contact-panel d-flex flex-wrap">
-                            <form class="contact-panel__form" method="post" action="assets/php/contact.php"
-                                id="contactForm">
+                            <form class="contact-panel__form" method="post" action="{{ route('product.store') }}" enctype="multipart/form-data">
+                                @csrf
                                 <div class="row">
                                     <div class="col-sm-12">
-                                        <h4 class="contact-panel__title">How Can We Help? </h4>
-                                        <p class="contact-panel__desc mb-30">Please feel welcome to contact our friendly
-                                            reception staff
-                                            with any general or medical enquiry. Our doctors will receive or return any
-                                            urgent calls.
-                                        </p>
+                                        <h4 class="contact-panel__title mb-30">Add Some Product Details</h4>
                                     </div>
                                     <div class="col-sm-6 col-md-6 col-lg-6">
                                         <div class="form-group">
-                                            <i class="icon-user form-group-icon"></i>
-                                            <input type="text" class="form-control" placeholder="Name" id="contact-name"
-                                                name="contact-name" required>
+                                            <i class="icon-drugs form-group-icon"></i>
+                                            <input type="text" class="form-control" placeholder="Product Name" id="contact-name"
+                                                name="name" required>
                                         </div>
                                     </div><!-- /.col-lg-6 -->
                                     <div class="col-sm-6 col-md-6 col-lg-6">
                                         <div class="form-group">
-                                            <i class="icon-email form-group-icon"></i>
-                                            <input type="email" class="form-control" placeholder="Email"
-                                                id="contact-email" name="contact-email" required>
+                                            <i class="icon-expenses form-group-icon"></i>
+                                            <input type="number" class="form-control" placeholder="Price"
+                                                id="contact-email" name="price" required>
                                         </div>
                                     </div><!-- /.col-lg-6 -->
                                     <div class="col-sm-6 col-md-6 col-lg-6">
                                         <div class="form-group">
-                                            <i class="icon-phone form-group-icon"></i>
-                                            <input type="text" class="form-control" placeholder="Phone"
-                                                id="contact-Phone" name="contact-phone" required>
+                                            <i class="icon-pills form-group-icon"></i>
+                                            <input type="number" class="form-control" placeholder="Stocks"
+                                                id="contact-stocks" name="stocks" required>
                                         </div>
                                     </div><!-- /.col-lg-6 -->
                                     <div class="col-sm-6 col-md-6 col-lg-6">
                                         <div class="form-group">
-                                            <i class="icon-news form-group-icon"></i>
-                                            <select class="form-control">
-                                                <option value="0">Subject</option>
-                                                <option value="1">Subject 1</option>
-                                                <option value="2">Subject 1</option>
-                                            </select>
+                                            <i class="icon-anesthetic form-group-icon"></i>
+                                            <input type="text" class="form-control" placeholder="Category"
+                                                id="contact-category" name="category">
                                         </div>
                                     </div><!-- /.col-lg-6 -->
                                     <div class="col-12">
                                         <div class="form-group">
-                                            <i class="icon-alert form-group-icon"></i>
-                                            <textarea class="form-control" placeholder="Message" id="contact-message" name="contact-message"></textarea>
+                                            <input type="file" class="form-control" placeholder="Photo"
+                                                id="contact-photo" name="photo" style="height: auto;" required>
                                         </div>
                                         <button type="submit"
                                             class="btn btn__secondary btn__rounded btn__block btn__xhight mt-10">
@@ -112,7 +104,7 @@
                                                 pm</a>
                                         </li>
                                     </ul>
-                                    <a href="#" class="btn btn__white btn__rounded btn__outlined">Contact Us</a>
+
                                 </div>
                             </div>
                         </div>

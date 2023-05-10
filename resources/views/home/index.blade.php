@@ -22,7 +22,8 @@
                                     <h2 class="slide__title">Providing Best Medical Equipment and Supplies</h2>
                                     <p class="slide__desc">The health and well-being of our patients and their health care
                                         team will
-                                        always be our priority, so we want to help provide the best medical tools and supplies.</p>
+                                        always be our priority, so we want to help provide the best medical tools and
+                                        supplies.</p>
                                     <ul class="features-list list-unstyled mb-0 d-flex flex-wrap">
                                         <!-- feature item #1 -->
                                         <li class="feature-item">
@@ -67,7 +68,8 @@
                                     <h2 class="slide__title">All Aspects Of Medical World</h2>
                                     <p class="slide__desc">The health and well-being of our patients and their health care
                                         team will
-                                        always be our priority, so we follow the best practices for product cleanliness and secured process.</p>
+                                        always be our priority, so we follow the best practices for product cleanliness and
+                                        secured process.</p>
                                     <ul class="features-list list-unstyled mb-0 d-flex flex-wrap">
                                         <!-- feature item #1 -->
                                         <li class="feature-item">
@@ -117,74 +119,30 @@
                     </div><!-- /.col-lg-6 -->
                 </div><!-- /.row -->
                 <div class="row">
-                    <!-- Product item #1 -->
-                    <div class="col-sm-6 col-md-6 col-lg-3">
-                        <div class="product-item">
-                            <div class="product__img">
-                                <img src="assets/images/products/1.jpg" alt="Product" loading="lazy">
-                                <div class="product__action">
-                                    <a href="#" class="btn btn__primary btn__rounded" style="display: inline-flex;">
-                                        <i class="icon-cart"></i> <span>Add To Cart</span>
-                                    </a>
-                                </div><!-- /.product-action -->
-                            </div><!-- /.product-img -->
-                            <div class="product__info">
-                                <h4 class="product__title"><a href="#">Calming Herps</a></h4>
-                                <span class="product__price">$18.99</span>
-                            </div><!-- /.product-content -->
-                        </div><!-- /.product-item -->
-                    </div><!-- /.col-lg-3 -->
-                    <!-- Product item #2 -->
-                    <div class="col-sm-6 col-md-6 col-lg-3">
-                        <div class="product-item">
-                            <div class="product__img">
-                                <img src="assets/images/products/2.jpg" alt="Product" loading="lazy">
-                                <div class="product__action">
-                                    <a href="#" class="btn btn__primary btn__rounded" style="display: inline-flex;">
-                                        <i class="icon-cart"></i> <span>Add To Cart</span>
-                                    </a>
-                                </div><!-- /.product-action -->
-                            </div><!-- /.product-img -->
-                            <div class="product__info">
-                                <h4 class="product__title"><a href="#">Biotin Complex</a></h4>
-                                <span class="product__price">$12,99</span>
-                            </div><!-- /.product-content -->
-                        </div><!-- /.product-item -->
-                    </div><!-- /.col-lg-3 -->
-                    <!-- Product item #3 -->
-                    <div class="col-sm-6 col-md-6 col-lg-3">
-                        <div class="product-item">
-                            <div class="product__img">
-                                <img src="assets/images/products/3.jpg" alt="Product" loading="lazy">
-                                <div class="product__action">
-                                    <a href="#" class="btn btn__primary btn__rounded" style="display: inline-flex;">
-                                        <i class="icon-cart"></i> <span>Add To Cart</span>
-                                    </a>
-                                </div><!-- /.product-action -->
-                            </div><!-- /.product-img -->
-                            <div class="product__info">
-                                <h4 class="product__title"><a href="#">Facial Serum</a></h4>
-                                <span class="product__price">$19,99</span>
-                            </div><!-- /.product-content -->
-                        </div><!-- /.product-item -->
-                    </div><!-- /.col-lg-3 -->
-                    <!-- Product item #4 -->
-                    <div class="col-sm-6 col-md-6 col-lg-3">
-                        <div class="product-item">
-                            <div class="product__img">
-                                <img src="assets/images/products/4.jpg" alt="Product" loading="lazy">
-                                <div class="product__action">
-                                    <a href="#" class="btn btn__primary btn__rounded" style="display: inline-flex;">
-                                        <i class="icon-cart"></i> <span>Add To Cart</span>
-                                    </a>
-                                </div><!-- /.product-action -->
-                            </div><!-- /.product-img -->
-                            <div class="product__info">
-                                <h4 class="product__title"><a href="#">Calming Herps</a></h4>
-                                <span class="product__price">$33.00</span>
-                            </div><!-- /.product-content -->
-                        </div><!-- /.product-item -->
-                    </div><!-- /.col-lg-3 -->
+                    @foreach ($products->take(4) as $item)
+                        <div class="col-sm-6 col-md-6 col-lg-3">
+                            <div class="product-item">
+                                <div class="product__img">
+                                    @if ($item->photo != null)
+                                        <img src="{{ asset('storage/' . $item->photo) }}"
+                                            alt="Product {{ $loop->iteration }}" loading="lazy">
+                                    @else
+                                        <p class="text-info">Photo not provided</p>
+                                    @endif
+                                    <div class="product__action">
+                                        <a href="#" class="btn btn__primary btn__rounded"
+                                            style="display: inline-flex;">
+                                            <i class="icon-cart"></i> <span>Add To Cart</span>
+                                        </a>
+                                    </div><!-- /.product-action -->
+                                </div><!-- /.product-img -->
+                                <div class="product__info">
+                                    <h4 class="product__title"><a href="#">{{ $item->name }}</a></h4>
+                                    <span class="product__price">Rp. {{ $item->price }}</span>
+                                </div><!-- /.product-content -->
+                            </div><!-- /.product-item -->
+                        </div><!-- /.col-lg-4 -->
+                    @endforeach
                 </div><!-- /.row -->
                 <div class="row">
                     <div class="col-12 text-center">
